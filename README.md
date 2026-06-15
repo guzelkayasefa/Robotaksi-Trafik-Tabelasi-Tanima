@@ -37,4 +37,36 @@ Modelin sınıfları ayırmadaki yüksek başarısı ve düşük arka plan (back
 F1 skoru ile güven eşiği (confidence threshold) arasındaki optimum denge.
 
 <p align="center">
+  <img src="docs/BoxF1_curve.png" width="70%" alt="F1 Curve">
+</p>
+</details>
 
+<details open>
+<summary><b>3. Eğitim Kaybı ve Doğruluk Grafikleri</b></summary>
+Loss değerlerindeki istikrarlı düşüş ve mAP değerlerindeki stabilizasyon.
+
+<p align="center">
+  <img src="docs/results.png" width="80%" alt="Training Results">
+</p>
+</details>
+
+<details open>
+<summary><b>4. Doğrulama Seti Tahmin Örnekleri (Inference)</b></summary>
+Modelin test verileri üzerindeki sınır kutusu (bounding box) çizimleri.
+
+<p align="center">
+  <img src="docs/val_batch0_labels.png" width="80%" alt="Validation Predictions">
+</p>
+</details>
+
+## 🚀 Kurulum ve Test
+
+Projeyi bilgisayarınızda veya NVIDIA Jetson gibi edge donanımlarınızda çalıştırmak için adımları takip edin:
+
+```bash
+# Repoyu klonlayın
+git clone [https://github.com/guzelkayasefa/Robotaksi-Trafik-Tabelasi-Tanima.git](https://github.com/guzelkayasefa/Robotaksi-Trafik-Tabelasi-Tanima.git)
+cd Robotaksi-Trafik-Tabelasi-Tanima
+
+# Gerekli kütüphaneleri kurun
+pip install -r requirements.txt
